@@ -24,7 +24,7 @@ index.js:
 
         (function(){
             var textArea;
-            eleditor.render({
+            var option={
                 elementId: "divInput",//the div element that will be rendered
                 uploadUrl:"http://url",
                 previewElementId:"divResult",//the preview div element
@@ -35,7 +35,8 @@ index.js:
                     }
                     document.getElementById("divResult").innerHTML=textArea.value;
                 }//the callback that will be applied when strings are inserted into textarea.
-            });
+            };
+            eleditor.render(option);
             if(!textArea){
                 textArea=document.getElementById("mTextArea");
             }
