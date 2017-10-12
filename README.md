@@ -3,21 +3,22 @@
 - Usage:
 
 Html: 
-        <!DOCTYPE>
-        <html>
-            <head>
-                <link rel="stylesheet" href="../eluploader.css"/>
-                <link rel="stylesheet" href="../eleditor.css"/>
-                <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.css"/>
-            </head>
-            <body>
-                <div id="divInput"></div>
-                <div id="divResult"></div>
-                <script src="../eluploader.js"></script>
-                <script src="../eleditor.js"></script>
-                <script src="index.js"></script>
-            </body>
-        </html>
+
+    <!DOCTYPE>
+    <html>
+       <head>
+          <link rel="stylesheet" href="../eluploader.css"/>
+          <link rel="stylesheet" href="../eleditor.css"/>
+          <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.css"/>
+       </head>
+       <body>
+          <div id="divInput"></div>
+          <div id="divResult"></div>
+          <script src="../eluploader.js"></script>
+          <script src="../eleditor.js"></script>
+          <script src="index.js"></script>
+       </body>
+     </html>
         
 index.js:
 
