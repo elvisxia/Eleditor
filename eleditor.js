@@ -169,8 +169,12 @@
 
         //init the uploader
         var imageCallback = function (text) {
-            var str = "![enter image description here](" + text + ")";
-            insertStringOnCursor(str);
+            insertStringOnStartEnd("![","](" + text + ")","enter image description here");
+            _options.onTextChange();
+        }
+        var fileCallback=function(text)
+        {
+            insertStringOnStartEnd("[","](" + text + ")","enter file description here");
             _options.onTextChange();
         }
         eluploader.render({
@@ -179,7 +183,8 @@
                 uploadCallback: imageCallback
             },
             "file": {
-
+                uploadUrl:_options.uploadUrl,
+                uploadCallback:fileCallback
             }
         });
 
